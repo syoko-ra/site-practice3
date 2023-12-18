@@ -1,4 +1,5 @@
 /*
+font-family: 'Bebas Neue', sans-serif;
 font-family: 'Noto Sans JP', sans-serif;
 font-family: 'Silkscreen', sans-serif;
 */
@@ -40,6 +41,30 @@ img {
 
 .header .logo {
     margin: 0;
+}
+
+.big-nav {
+    display: none;
+}
+
+.header-img-container {
+    position: relative;
+}
+
+.header-img-container p {
+    color: #fff;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.header-img-container video {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
 }
 
 
@@ -159,16 +184,28 @@ img {
 
 
     .navbar-title {
-        font-size: 20px;
+        font-size: 50px;
+    }
+
+    .header-img-container p {
+        font-size: 40px;
     }
 
     .logo {
-        font-size: 37px;
+        padding: 200px 0 100px 0;
+        font-size: 20px;
     }
 
 
     .item {
-        width: calc((100% - 70px) / 2);
+        width: calc((100% - 30px) / 2);
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .pop-body {
+        padding: 8px;
+        font-size: 95%;
     }
 
     .main-body {
@@ -181,10 +218,29 @@ img {
         width: 300px;
     }
 
+    .main-img img {
+        max-width: 200px;
+    }
+
 }
 
 /* 大きな画面用メディアクエリ */
 @media (min-width: 992px) {
+    .big-nav {
+        background-color: #ffffff;
+        padding: 40px 0 10px 0;
+        height: 150px;
+        font-weight: bold;
+        font-size: 32px;
+        color: #000000;
+        text-align: center;
+        display: block;
+    }
+
+    .header-img-container p {
+        font-size: 100px;
+    }
+
     .item {
         width: calc((100% - 90px) / 3);
     }
@@ -324,7 +380,7 @@ img {
 
 .flowbtn10:hover {
     background-color: #fff;
-    color: #c6529a;
+    color: rgb(108, 87, 201);
 }
 
 

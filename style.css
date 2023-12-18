@@ -12,7 +12,7 @@ nav {
   width: 100%;
   z-index: 2;
   background-color: #fff;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 nav a {
@@ -34,6 +34,10 @@ nav a:hover {
   color: #fff;
 }
 
+.small-nav {
+  display: none;
+}
+
 section:nth-of-type(even) {
   background-color: #ddd;
 }
@@ -51,7 +55,7 @@ section:nth-of-type(even) {
     right: 5px;
     width: 44px;
     height: 44px;
-    z-index: 100;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -89,6 +93,7 @@ section:nth-of-type(even) {
     padding: 20px 0;
     transition: all 0.5s ease;
     top: -500px;
+
   }
 
   nav.on {
@@ -99,6 +104,16 @@ section:nth-of-type(even) {
     width: 100%;
     margin: 10px;
     text-align: center;
+  }
+
+  .small-nav {
+    background-color: #ffffff;
+    padding: 50px 0 10px 0;
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
   }
 }
 
@@ -117,4 +132,8 @@ section:nth-of-type(even) {
 
 .back {
   background-color: #fff;
+}
+
+nav a {
+  font-weight: bold;
 }
